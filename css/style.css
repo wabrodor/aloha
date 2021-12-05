@@ -131,7 +131,7 @@ border-radius:10px;
 
 .hero{
 
-    background:linear-gradient(0deg, rgba(0 0 0 / 44%), rgba(0 0 0 / 19%)), url("/images/female.jpg");
+    background:linear-gradient(0deg, rgba(0 0 0 / 44%), rgba(0 0 0 / 19%)), url("images/female.jpg");
    
     height:100vh;
     background-position: top;
@@ -171,7 +171,7 @@ background:rgba(255, 255, 255, 0.39);
 .hero_video{
 box-shadow:2px 4px 20px 5px #000;
 margin:0 4rem;
-background: url("/images/Medical-students.jpg");
+background: url("images/Medical-students.jpg");
 background-size: cover;
 width:60%;
 height:50%;
