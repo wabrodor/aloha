@@ -1,0 +1,117 @@
+/********************* reset **********************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+/* ******************************************* */
+
+
+/* global variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Rammetto+One&display=swap');
+
+:root{
+	--main-clr:#000;
+	--menu-clr:#1e73be;
+	--font-clr:#000000b8;
+	--head-clr:rgba(0,0,0,.8);	
+   --body-font: 'Comic Neue', cursive;
+   --head-font: 'Rammetto One', cursive;
+   --btn-clr : #fce300;
+   --join-btn: #b20c0c;
+   --font-size-head:3rem;
+   --font-size-mobile:2rem;
+   --secondary-clr: rgb(0, 11, 118);
+}
+
+/* global variables - color */
+html{
+scroll-behavior: smooth;
+}
+
+body{
+	font-family: var(--body-font);
+	color:var(--font-clr);	
+	font-size: 20px;
+	overflow-x: hidden;
+}
+
+/* utitlities */
+
+.p1{
+padding:0 1rem;
+}
+.p2{
+	padding:0 1.5rem;
+}
+.p3{
+	padding:0 3rem;
+}
+
+h1,
+h2,
+h3,
+h4{
+	font-family: var(--head-font);
+	font-size:var(--font-size-head);
+	margin-bottom:2rem;
+}
+img{
+	max-width:100%;
+	display:block;
+}
+
+@media (max-width:1000px){
+h1,
+h2,
+h3,
+h4{
+	font-family: var(--head-font);
+	font-size:var(--font-size-mobile);
+	margin-bottom:1rem;
+}
+
+}
