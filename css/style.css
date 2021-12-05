@@ -131,7 +131,7 @@ border-radius:10px;
 
 .hero{
 
-    background:linear-gradient(0deg, rgba(0 0 0 / 44%), rgba(0 0 0 / 19%)), url(images/female.jpg);
+    background:linear-gradient(0deg, rgba(0 0 0 / 44%), rgba(0 0 0 / 19%)), url("images/female.jpg");
    
     height:100vh;
     background-position: top;
@@ -153,12 +153,12 @@ h1{
     margin-bottom: 2rem;
 }
 .hero-btn{
-    /* display:inline-block; */
     margin:4rem auto;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-size: 20px;
     color:#fff;
+    margin-left:1.5rem;
     box-shadow: 2px 2px 20px 2px #000;
     border-radius: 20px;
 text-transform: capitalize;
@@ -171,7 +171,7 @@ background:rgba(255, 255, 255, 0.39);
 .hero_video{
 box-shadow:2px 4px 20px 5px #000;
 margin:0 4rem;
-background: url(images\Medical-students.jpg);
+background: url("images/Medical-students.jpg");
 background-size: cover;
 width:60%;
 height:50%;
