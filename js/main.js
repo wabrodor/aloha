@@ -44,6 +44,10 @@ window.addEventListener("scroll", ()=>{
 
 links.forEach(link =>{
     link.addEventListener("click", (e)=>{
+        
+        const slicedLink =  link.querySelector("a").getAttribute("href").slice(1);
+    
+
         nav.classList.toggle("active_menu")
     })
 })
