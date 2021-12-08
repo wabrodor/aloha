@@ -58,8 +58,11 @@ a{
 	--font-clr:#000000b8;
 	--head-clr:rgba(0,0,0,.8);	
    --body-font: 'Comic Neue', cursive;
-   --head-font: 'Rammetto One', cursive;
+   --head-font:  'Readex Pro', sans-serif;
+   --special-font:'Rammetto One', cursive;
    --btn-clr : #fce300;
+   --w-clr:#fff;
+   --nav-background:rgba(255, 255, 255, 0.8);
    --join-btn: #b20c0c;
    --font-size-head:3rem;
    --font-size-mobile:2rem;
@@ -74,8 +77,9 @@ scroll-behavior: smooth;
 body{
 	font-family: var(--body-font);
 	color:var(--font-clr);	
-	font-size: 20px;
+	font-size: 22px;
 	overflow-x: hidden;
+	font-weight: 500;
 }
 
 /* utitlities */
@@ -111,6 +115,9 @@ h4{
 	font-family: var(--head-font);
 	font-size:var(--font-size-mobile);
 	margin-bottom:1rem;
+}
+p{
+	font-size:1.25rem;
 }
 
 }

@@ -3,8 +3,6 @@
 const navLinks = document.querySelectorAll("#nav-home")
 const toggle = document.querySelector(".toggle")
 const nav = document.querySelector(".navigation")
-const closebtn = document.querySelectorAll("[data-close-popup]")
-const openPopup = document.querySelectorAll("[data-modal-target]")
 const overlay = document.querySelector(".overlay");
 
 const links = document.querySelectorAll("#nav-home");
@@ -45,12 +43,12 @@ window.addEventListener("scroll", ()=>{
 links.forEach(link =>{
     link.addEventListener("click", (e)=>{
         
-        const slicedLink =  link.querySelector("a").getAttribute("href").slice(1);
-    
+    const slicedLink =  link.querySelector("a").getAttribute("href").slice(1);
 
         nav.classList.toggle("active_menu")
     })
 })
+
 
 
 
