@@ -134,107 +134,91 @@ nav{
     /* navigation ends*/
     
 
-.about-hero{
-   height:500px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    margin: auto 0;
-    background:linear-gradient(200deg, rgba(0, 2, 8, 0.64), rgba(0, 0, 0, 0.634)), url("../images/female-mini-min.jpg");
-    background-position: center;
-    background-size: cover;
-}
 
-.about-hero h1{
-padding: 1rem;
-color:var(--w-clr);
-text-transform: uppercase;
-}
 
-.divider{
-    width:40%;
-     height:5%;
-     border-top:5px solid rgba(196, 184, 10, 0.781);
-     margin-top:-20px;
- }
-
- .about-header{
+.join-hero{
+    height:300px;
+     width: 100%;
      display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     gap:50px;
+     align-items: flex-end;
+     margin: auto 0;
+     background:linear-gradient(rgba(29, 88, 143, 0.7), rgba(0, 0, 0, 0.9)), url("https://cdn.pixabay.com/photo/2020/11/19/08/03/college-5757815_960_720.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ .join-hero h1{
+ padding: 1rem;
+ color:var(--w-clr);
+ text-transform: uppercase;
  }
 
-.header-text{
-    font-weight: 700;
-    max-width: 50%;
+ .join-slider{
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: center;
+     align-items: center;
+     padding:5rem 2rem;
+ }
+
+form{
+    background:var(--join-btn);
+    opacity:0.9;
+    width:90%;
+    padding:2rem 1rem;
+    border-radius:15px;
 }
 
-.header-logo{
-width:80%;
-height:30%;
-margin:6rem auto;
-padding:2rem 0.5rem; 
-box-shadow: 2px 2px 20px 3px #000;
-display:grid;
-border-radius: 15px;
-place-items: center;
-object-fit: cover;
+label{
+    color:var(--w-clr);
+    text-transform:capitalize;
 }
 
-.header-logo > img{
-    width:50%;
+input{
+    border:0;
+    padding: 0.5rem;
+    margin:1rem auto;
 }
 
-.about-body{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:40px;
+input:focus-within{
+    border:2px solid red;
 }
 
-.body-text-pt1 p::first-letter{
-font-size:80px;
-color:red;
+.name{
+    display:flex;
+    padding:1rem;
 }
 
-
-.about-studygraph{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin:3rem auto;
-    gap:20px;
+input[type = "text"] {
+border:0;
+background:rgba(255, 255, 255, 0.775);
+border-radius: 5px;
+}
+input[type ="number"]{
+    border:0;
+    background:rgba(255, 255, 255, 0.775);  
+    border-radius: 5px;
 }
 
-.graph-info{
-    width:50%;
-}
-.graphcolor{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(10, auto);
-}
-
-.num-graph{
-    padding:1rem 2rem;
-   
-    text-align: center;
+.btn-submit button{
+    display:block;
+    margin:1rem auto;
+    width:60%;
+    padding:0.5rem;
+    border:0;
+    border-radius: 10px;
+    background-color: var(--btn-clr);
+    text-transform: capitalize;
+    transition: all  0.5s ease;
 }
 
-.num-graph:nth-child(2n+1){
-
-    background:rgba(255, 0, 0, 0.37);
-    font-size: 30px;
+.btn-submit button:hover{
+background:#000;
+color:var(--w-clr);
+transform: scale(1.1);
 }
 
-
-.clr-1{
-    background:rgba(224, 226, 231, 0.164) !important;
-}
-
-
-.before-footer{
+.footer-before{
     height:400px;
     background:linear-gradient(rgba(29, 88, 143, 0.7), rgba(0, 0, 0, 0.9)), url("https://cdn.pixabay.com/photo/2017/09/08/00/38/friend-2727307_960_720.jpg");
     background-repeat: no-repeat;
@@ -243,18 +227,30 @@ color:red;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding:1rem; 
+    padding:1rem;
+    color:var(--w-clr);
+
 }
 
+.footer-before article h1{
+    font-size: 56px;
+    text-transform: capitalize;
+}
 
+.divider{
+    width:40%;
+     height:5%;
+     border-top:5px solid rgba(196, 184, 10, 0.781);
+     margin-top:20px;
+ }
 
  footer{
     background-color: rgba(0, 0, 0, 0.9);
     height:100px;
     width: 100%;
     color:#fff;
-   margin:auto 0;
-   padding:1rem;
+    margin:auto 0;
+    padding:1rem;
 }
 
 footer p{
@@ -264,38 +260,26 @@ footer p{
     font-size: 1rem;
 }
 
+
 @media (max-width:900px){
-    .about-hero{
-        height:250px;
-        margin-bottom: 1rem;
+    .join-slider{
+       grid-template-columns: 1fr;
+      gap:50px;
     }
-    .header-text{
-        max-width:95%;
-    }
-    .wrapper{
-        padding: 1rem 1.55rem;
-    }
-
-    .header-logo{
-        margin:3rem auto;
-        max-width:90%;
-        width:100%;
-    }
-
-    .about-header{
-        flex-direction: column;
-        gap:20px;
-    }
-    .about-body{
-        flex-direction: column;
-    }
-    .about-studygraph{
-        flex-direction: column;
-        gap:50px;
-        align-items: center;
-        max-width: 95%;
-    }
-    .graph-info{
+    form{
         width:90%;
+        display:block;
+        margin:0.25rem auto;
+    }
+    .name{
+        display:flex;
+        flex-direction: column;
+    }
+    input{
+        width:90%;
+    }
+    .join-about-slider{
+        order: 2;
+       gap:50px;
     }
 }
