@@ -13,6 +13,6 @@ let count = 0;
 
 window.addEventListener("DOMContentLoaded", ()=>{
     setTimeout(() => {
-        window.location.href = "index.html"
+        window.location.href = "index"
     }, 5000);
 })
