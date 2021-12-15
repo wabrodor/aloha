@@ -164,7 +164,7 @@ nav{
 form{
     background:var(--join-btn);
     opacity:0.9;
-    width:90%;
+    width:95%;
     padding:2rem 1rem;
     border-radius:15px;
 }
@@ -172,6 +172,7 @@ form{
 label{
     color:var(--w-clr);
     text-transform:capitalize;
+   
 }
 
 input{
@@ -187,6 +188,9 @@ input:focus-within{
 .name{
     display:flex;
     padding:1rem;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
 }
 
 input[type = "text"] {
@@ -261,13 +265,13 @@ footer p{
 }
 
 
-@media (max-width:900px){
+@media (max-width:760px){
     .join-slider{
        grid-template-columns: 1fr;
       gap:50px;
     }
     form{
-        width:90%;
+        width:100%;
         display:block;
         margin:0.25rem auto;
     }
@@ -276,7 +280,7 @@ footer p{
         flex-direction: column;
     }
     input{
-        width:90%;
+        width:100%;
     }
     .join-about-slider{
         order: 2;

@@ -140,7 +140,7 @@ nav{
     display: flex;
     align-items: flex-end;
     margin: auto 0;
-    background:linear-gradient(200deg, rgba(0, 2, 8, 0.64), rgba(0, 0, 0, 0.634)), url("../images/female-mini-min.jpg");
+    background:linear-gradient(200deg, rgba(0, 2, 8, 0.74), rgba(0, 0, 0, 0.234)), url("../images/Medical-students.webp");
     background-position: center;
     background-size: cover;
 }
@@ -191,6 +191,7 @@ object-fit: cover;
     justify-content: space-between;
     align-items: center;
     gap:40px;
+    line-height: 30px;
 }
 
 .body-text-pt1 p::first-letter{
@@ -205,6 +206,7 @@ color:red;
     align-items: flex-start;
     margin:3rem auto;
     gap:20px;
+    line-height: 30px;
 }
 
 .graph-info{
@@ -241,11 +243,30 @@ color:red;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding:1rem; 
+    gap:40px;
+}
+.before-footer h2{
+    color:var(--w-clr);
+    line-height: 35px;
+
+}
+.before-footer > a{
+    background:var(--join-btn);
+    padding:0.7rem 2rem;
+    color:var(--w-clr);
+    border-radius:10px;
+    text-transform: capitalize;
 }
 
+.before-footer > a:hover{
+    background:var(--join-btn);
+    transform: translateY(4px);
+   transition: all 0.2s ease;
+}
 
 
  footer{

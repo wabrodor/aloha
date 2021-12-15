@@ -149,7 +149,12 @@ border-radius:10px;
     position:relative;
     
 }
-
+.hero-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .hero-header h1{
     font-weight: 900;
     font-family: var(--special-font);
@@ -159,28 +164,33 @@ border-radius:10px;
     padding:2rem;
     line-height: 60px;
     margin-bottom: 2rem;
+    display: flex;
+ 
 }
 
 .hero-btn{
-    margin:4rem auto;
-    padding: 0.75rem 1.5rem;
+    margin:2rem auto;
+    padding: 1rem 1.5rem;
     text-decoration: none;
-    font-size: 20px;
+    width:50%;
+    font-size: 22px;
     border:1px solid var(--w-clr);
     color:var(--w-clr);
-    margin-left:1.5rem;
-    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.438);
+    /* margin-left:1.5rem; */
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.638);
     border-radius: 20px;
     text-transform: capitalize;
+    text-align:center;
 }
 
 .hero-btn:hover{
-   background:rgba(8, 11, 163, 0.69);
+   background:rgba(8, 11, 163, 0.89);
    color:var(--w-clr);
+   border:0;
 }
 
 
-.hero_video{
+/* .hero_video{
 box-shadow:2px 4px 20px 5px rgb(73, 69, 69);
 margin:0 4rem;
 background: url("../images/Medical-students.jpg");
@@ -197,7 +207,7 @@ color:var(--w-clr);
 
 .hero_video > .video-popup{
     z-index:10;
-}
+} */
 
 
 .overlay{
@@ -768,6 +778,11 @@ text-transform: capitalize;
 
    .pt-8{
 padding:3rem 1.5rem;
+background:linear-gradient(rgba(29, 88, 143, 0.7), rgba(0, 0, 0, 0.9)), url("https://cdn.pixabay.com/photo/2017/09/08/00/38/friend-2727307_960_720.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+color:#fff;
 
    }
 
@@ -824,13 +839,39 @@ padding:3rem 1.5rem;
 font-size:15px;
 }
 
+.join-btn > a{
+    color:#000;
+}
+
+.join-btn:hover{
+    background:transparent;
+    border:1px solid #fff;
+
+}
+
+.join-btn >a:hover{
+    color:#fff;
+}
+
 @media (max-width:900px){
     .contact{
         flex-direction: column;
     }
     .address{
-        width: 90%;
+        width: 100%;
     }
+    .social{
+        width:95%;
+    }
+    .join-btn{
+        font-size: 10px;
+        padding: 0.5rem 1.5rem;
+        color: #000 !important;
+       
+    }
+
+   
+    
 }
 
 
