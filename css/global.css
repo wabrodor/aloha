@@ -54,14 +54,18 @@ a{
 
 :root{
 	--main-clr:#000;
+	--w-clr:#fff;
 	--menu-clr:#1e73be;
 	--font-clr:#000000b8;
+
+	/* colors */
+	--theme-clr:#000b76;
 	--head-clr:rgba(0,0,0,.8);	
    --body-font: 'Comic Neue', cursive;
    --head-font:  'Readex Pro', sans-serif;
    --special-font:'Rammetto One', cursive;
    --btn-clr : #fce300;
-   --w-clr:#fff;
+   
    --nav-background:rgba(255, 255, 255, 0.8);
    --join-btn: #b20c0c;
    --font-size-head:3rem;
@@ -101,6 +105,7 @@ h4{
 	font-family: var(--head-font);
 	font-size:var(--font-size-head);
 	margin-bottom:2rem;
+	text-transform: capitalize;
 }
 img{
 	max-width:100%;
