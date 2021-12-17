@@ -25,6 +25,7 @@
     color:var(--w-clr);
     margin:1rem 0.25rem;
     opacity:0.75;
+    text-align: center;
 }
 
 .sect-1, .sect-2, .sect-3{
@@ -42,7 +43,7 @@ margin:3rem auto;
 }
 
 .pt-1_header{
-    font-size: 36px;
+    font-size: 30px;
     line-height: 140%;
     text-align: center;
 }
@@ -70,6 +71,7 @@ margin:3rem auto;
 .sect_about--heading--h{
 font-size: 40px;
 margin:2rem auto;
+text-align:center;
 }
 .divider{
     width:30%;
@@ -88,6 +90,7 @@ margin:2rem auto;
 .sect_about_icon p{
     font-size:18px;
     font-weight: 400;
+    text-align: center;
 }
 
 .sect_about_icon i{
@@ -109,8 +112,9 @@ margin:2rem auto;
   line-height: 160%;
 }
 
-.before_footer h3{
+.before_footer p{
     line-height:160%;
+    font-size:30px;
 }
 .btn-submit{
     display:block;
@@ -118,6 +122,7 @@ margin:2rem auto;
     width:30%;
     padding:1rem;
     border:0;
+    color:#000;
     border-radius: 10px;
     background-color: var(--btn-clr);
     text-transform: capitalize;
@@ -137,15 +142,48 @@ color:var(--w-clr);
 
 
 @media (max-width:800px){
+
     .sect-1, .sect-2, .sect-3{
         display: grid;
         grid-template-columns: 1fr;
         } 
-        
+        .pt-1_header{
+            font-size: 30px;
+            line-height: 120%;
+            text-align: center;
+        }
+        .wrapper{
+            padding: 1rem 0.5rem;
+        }
+        .pt-1_body{
+            line-height: 160%;
+            margin: 1rem;
+            padding:0;
+            margin:0;
+        }
+        .divider{
+            margin:auto;
+        }
         .sect-2 .pt-1{
             order: 2;
         }
+        .before_footer p{
+            line-height:120%;
+            font-size:30px;
+        }
         .sect_about_icon{
             flex-direction: column;
+        }
+        .btn-submit{
+            display:block;
+            margin:2rem auto;
+            width:50%;
+            padding:0.5rem;
+            border-radius: 10px;
+            background-color: var(--btn-clr);
+            text-transform: capitalize;
+            -webkit-transition: all  0.5s ease;
+            -o-transition: all  0.5s ease;
+            transition: all  0.5s ease;
         }
 }
