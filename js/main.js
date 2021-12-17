@@ -1,13 +1,12 @@
-
-
-const navLinks = document.querySelectorAll(".nav-home")
 const toggle = document.querySelector(".toggle")
 const linksContainer = document.querySelector(".navigation")
 const links = document.querySelectorAll(".nav-home");
 const navHeight = document.querySelector("nav")
 const footer = document.querySelector("footer")
+const linkList = document.querySelectorAll(".nav_link")
 const date = new Date()
 footer.innerHTML = `<P>copyright © ${date.getFullYear()}  ${document.title}  powerd by ALOHA </P>`
+
 
 
 toggle.addEventListener("click", ()=>{
@@ -53,10 +52,10 @@ links.forEach(link =>{
         left: 0,
         top: position,
       });
+   
     linksContainer.classList.toggle("active_menu")
-});
-    
-    })
+})
+   })
 
 
 
