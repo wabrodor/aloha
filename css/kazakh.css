@@ -2,13 +2,16 @@
     padding:1rem 2rem;
 }
 .hero{
-    background:var(--theme-clr);
+    background:linear-gradient(rgba(29, 88, 143, 0.7), rgba(0, 0, 0, 0.9)), url("../images/moldova.jpg");
     display: -webkit-flex;
     display:flex;
     justify-content: center;
     align-items: center;
     min-height: 300px;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero_heading{
@@ -106,6 +109,9 @@ margin:2rem auto;
   line-height: 160%;
 }
 
+.before_footer h3{
+    line-height:160%;
+}
 .btn-submit{
     display:block;
     margin:1rem auto;
