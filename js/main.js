@@ -59,10 +59,10 @@ activeItem.forEach(active =>{
     let position = element.offsetTop - nav;
 
      if (!fixedNav) {
-      position = position - containerHeight;
+      position = position - nav;
     }
 
-    if (navHeight > 100) {
+    if (nav > 80) {
         position = position + containerHeight;
       }
 
