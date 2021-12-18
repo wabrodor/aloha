@@ -70,6 +70,7 @@ a{
    --join-btn: #b20c0c;
    --font-size-head:3rem;
    --font-size-mobile:2rem;
+   --font-size-mobile-small:1.75rem;
    --secondary-clr: rgb(0, 11, 118);
 }
 
@@ -295,7 +296,22 @@ h4{
 	font-size: var( --font-size-mobile);
 }
 p{
-	font-size:1.25rem;
+	font-size:1.3rem;
 }
 
 }
+
+@media (max-width:400px){
+    h1,
+    h2,
+    h3,
+    h4{
+        font-family: var(--head-font);
+        font-size:var(--font-size-mobile-small);
+        margin-bottom:1.2rem;
+    }
+    p{
+        font-size:1.15rem;
+    }
+    
+    }

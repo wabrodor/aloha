@@ -33,6 +33,24 @@ links.forEach(link =>{
     link.addEventListener("click", (e)=>{
         e.preventDefault();
 
+    
+
+const activeItem = document.querySelectorAll(".find_item");
+
+activeItem.forEach(active =>{
+    active.addEventListener("click", (e) =>{
+
+    activeItem.forEach(item =>{
+
+         if(item !== active){
+             item.classList.remove("active_link")
+                }
+        })
+    active.classList.add("active_link");
+     
+    })
+})
+
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     const containerHeight = linksContainer.getBoundingClientRect().height;
@@ -41,10 +59,10 @@ links.forEach(link =>{
     let position = element.offsetTop - nav;
 
      if (!fixedNav) {
-      position = position - navHeight;
+      position = position - containerHeight;
     }
 
-    if (navHeight > 82) {
+    if (navHeight > 100) {
         position = position + containerHeight;
       }
 
@@ -61,3 +79,21 @@ links.forEach(link =>{
 
 
 
+// function 
+const activeSwitcher  = (activeClass, switcher) => {
+    const activeItem = document.querySelectorAll(".activeClass");
+
+    activeItem.forEach(active =>{
+        active.addEventListener("click", (e) =>{
+    
+        activeItem.forEach(item =>{
+    
+             if(item !== active){
+                 item.classList.remove(switcher)
+                    }
+            })
+        active.classList.add(switcher);
+         
+        })
+    })
+}

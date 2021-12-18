@@ -694,6 +694,10 @@ footer p {
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    .pt-3-sect{
+        flex-direction: column-reverse;
+        
+    }
     .card {
         width: 90%;
     }
@@ -749,10 +753,13 @@ footer p {
     .pt-3-sect {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .questions {
         width: 100%;
+    }
+    .story-subtile{
+        margin-bottom:3rem;
     }
 }
