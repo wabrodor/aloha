@@ -56,6 +56,7 @@ activeItem.forEach(active =>{
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const nav = navHeight.getBoundingClientRect().height
     const fixedNav = navHeight.classList.contains("fixed");
+    if(!element) return
     let position = element.offsetTop - nav;
 
      if (!fixedNav) {
